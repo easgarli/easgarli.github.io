@@ -1,1 +1,121 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICA Chatbot - AI-Powered Customer Support</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>AICA çat bot müştəri xidmətləri</h1>
+        <p><h2>Süni intellekt çat botlarımızla müştərilərin suallarına dərhal cavab verin və biznesiniz üçün müştəri dəstəyini sadələşdirin.</h2></p>
+        
+    </header>
+    <!-- Section 1: Introduction to AI Chatbots -->
+    <section class="section">
+        <h2>Niyə biznesiniz üçün süni intellekt ilə işləyən çat botları seçməlisiniz?</h2>
+        <p>Bu günün sürətli rəqəmsal mənzərəsində müştərilər ani cavablar və 24/7 dəstək gözləyirlər. 
+            Süni intellekt chatbotları sizə müştəri xidmətlərini avtomatlaşdırmağa, komandanız üçün iş yükünü azaltmağa 
+            və ani cavablar təqdim etməyə kömək edir. AICA ilə bizim AI chatbotlarımız müştərilərinizin gözləntilərinə 
+            cavab vermənizi, fərdiləşdirilmiş qarşılıqlı əlaqə qurmağınızı və məmnuniyyəti artırmağınızı təmin edir.</p>
+    </section>
+
+    <section id="solutions" class="section">
+        <h2>Müxtəlif sahələr üçün həllər</h2>
+        <div class="customer-types">
+            <div class="customer-box">
+                <p><strong>Maliyyə təşkilatları</strong></p>
+                <p>Müştəri xidmətlərinizi avtomatlaşdırmaqla maliyyə xidmətlərinizi təkmilləşdirin. AICA maliyyə təşkilatlarına müştərilərlə ünsiyyəti asanlaşdırmağa kömək edir, sürətli cavablar və sizin məlumat bazanıza əsaslanan dəqiq maliyyə məsləhətləri təklif edir.</p>
+                <div class="industry-buttons">
+                    <a href="{{ url_for('finance') }}">Maliyyə məhsulu üçün çatbot</a>
+                </div>
+            </div>
+            <div class="customer-box">
+                <p><strong>Təhsil müəssisəsi</strong></p>
+                <p>Tələbələrinizə kurslar, dərs cədvəlləri və ya qaydalar ilə bağlı suallara cavab vermək üçün günün istənilən vaxtında dəstək təklif edin. AICA, təhsil xidmətlərinizə diqqət yetirməyə imkan verərək, müştərilərlə daha səmərəli idarə etməyə kömək edir.</p>
+                <div class="industry-buttons">
+                    <a href="{{ url_for('education') }}">Təhsil müəssisəsi üçün çatbot</a>
+                </div>
+            </div>
+            <div class="customer-box">
+                <p><strong>Online satış mağazası</strong></p>
+                <p>Müştərilərinizə məhsul mövcudluğu və xidmətlər ilə bağlı tez və detallı cavablar verin. AICA, əlavə işçilərə ehtiyac olmadan müştərilərinizin dəstək almalarını təmin edir.</p>
+                <div class="industry-buttons">
+                    <a href="{{ url_for('products') }}">Online satış üçün çatbot</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section 3: How AICA Works -->
+    <section class="section">
+        <h2>AICA necə işləyir?</h2>
+        <p>AICA ilə işə başlamaq sadədir. Bilik bazanızı yükləyin, müştərilərinizə cavab vermək üçün AICA-nı öyrədin 
+            və veb saytınız, WhatsApp və Telegram platformalarında yerləşdirin. 
+            Bizim çat botlarımız 24/7 işləyir və siz biznesinizi inkişaf etdirməyə diqqət yetirərkən qüsursuz müştəri dəstəyini təmin edir.</p>
+    </section>
+
+    <div class="card">
+        <div class="card-left">
+            <h2>AICA WhatsApp Bot</h2>
+            <p>AICA WhatsApp bot, qabaqcıl süni intellekt texnologiyasından istifadə edərək müştəri suallarına 24/7 cavab verir. İstənilən vaxtda müştərilərinizin suallarını cavablandırın və müştəri məmnuniyyətini artırın.</p>
+            <p>AICA müştəri suallarını anlayır və cavablandırır, satışları və müştəri dəstəyini avtomatlaşdırır. WhatsApp-da rahat və effektiv müştəri xidmətləri təmin edin!</p>
+            <a href="https://wa.me/+994103194646" class="cta-button">İndi yoxla!</a>
+        </div>
+        <div class="card-right">
+            <img src="static/images/AICA_WP_chat_bot_screen.jpeg" alt="WhatsApp Screenshot">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-left">
+            <h2>AICA Telegram Bot</h2>
+            <p>AICA Telegram botu şirkətinizə aid məhsul məlumatlarını təmin etməklə müştəri sorğularını canlı rejimdə cavablandırır. Müştərilərinizlə Telegram vasitəsilə səmərəli və rahat ünsiyyət qurun.</p>
+            <p>AICA ChatGpt xidmətinin arxasında duran OpenAI texnologiyasından istifadə etməklə sorğulara sürətli və düzgün cavab verir, müştəri xidmətlərini avtomatlaşdırmaqla məhsuldarlığı artırır. Siz də Telegram üzərindən müştəri xidmətlərinizi optimallaşdırın!</p>
+            <a href="https://t.me/TezPul_Az_bot" class="cta-button">İndi yoxla!</a>
+        </div>
+        <div class="card-right">
+            <img src="static/images/AICA_TG_chatbot.jpeg" alt="Telegram Bot Screenshot">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-left">
+            <h2>AICA Veb Bot</h2>
+            <p>AICA veb sayt çat botu, müştərilərinizə saytı tərk etmədən real vaxtda dəstək göstərir. Veb saytınız vasitəsilə istifadəçilərlə asanlıqla əlaqə quraraq onların suallarını dərhal cavablandırın.</p>
+            <p>AICA, OpenAI texnologiyasını istifadə etməklə veb sayt ziyarətçilərinizi maraqlandıran məhsul və ya xidmətlər haqqında dəqiq məlumatlar verir. Müştəri məmnuniyyətini artırmaq üçün saytda daimi dəstək təklif edin!</p>
+            <a href="{{ url_for('education') }}" class="cta-button">İndi yoxla!</a>
+        </div>
+        <div class="card-right">
+            <img src="static/images/internet_bot.png" alt="Veb Bot Screenshot">
+        </div>
+    </div>
+    <!-- Section 4: Contact Us -->
+    <section id="contact" class="section">
+        <h2>AICA ilə müştəri xidmətinizi təkmilləşdirməyə hazırsınız?</h2>
+        <p>Əgər siz süni intellektlə işləyən çat botları biznesinizə tətbiq etməyə hazırsınızsa 
+            və ya hər hansı sualınız varsa, biz kömək etmək üçün buradayıq!</p>
+            <a href="{{ url_for('contact') }}" class="cta-button">Əlaqə saxlayın</a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TezFinance Tech MMC. Bütün hüquqlar qorunur. | <a href="{{ url_for('company') }}">Şirkət haqqında</a>| <a href="{{ url_for('privacy') }}">Məxfilik siyasəti</a> | <a href="{{ url_for('service_terms') }}">İstifadə şərtləri</a></p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
